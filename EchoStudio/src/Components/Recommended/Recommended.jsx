@@ -45,7 +45,7 @@ const Recommended = ({ categoryId }) => {
 }
 
 Recommended.propTypes = {
-    categoryId: PropTypes.func.isRequired,
+    categoryId: PropTypes.string.isRequired,
 };
 
 export default Recommended;
