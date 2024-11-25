@@ -18,7 +18,7 @@ const Home = ({sidebar}) => {
 }
 
 Home.propTypes = {
-  sidebar: PropTypes.func.isRequired, // setSidebar should be a required function
+  sidebar: PropTypes.bool.isRequired, // setSidebar should be a required function
 };
 
 
