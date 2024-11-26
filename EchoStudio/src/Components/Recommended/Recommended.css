@@ -31,43 +31,46 @@
 .recommended {
     flex-basis: 30%;
     display: flex;
-    flex-direction: column; /* Ensure videos are stacked vertically */
-    gap: 8px; /* Add spacing between video items */
+    flex-direction: column;
+    gap: 8px;
 }
 
 .side-video-list {
     display: flex;
-    align-items: flex-start; /* Align the image and text at the top */
-    gap: 10px; /* Space between the video thumbnail and text */
+    align-items: flex-start;
+    gap: 10px;
     margin-bottom: 8px;
+    width: 100%; /* Ensure full width */
 }
 
 .side-video-list img {
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 120px; /* Fixed width for consistent layout */
-    height: 67px; /* Maintain a 16:9 aspect ratio */
-    object-fit: cover; /* Ensure the image fills the space without distortion */
-    border-radius: 4px; /* Optional: Rounded corners for the image */
+    flex-shrink: 0;
+    width: 120px;
+    height: 67px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .vid-info {
-    flex: 1; /* Allow the text to take the remaining space */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Stack text lines vertically */
-    justify-content: center; /* Center-align text vertically if needed */
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to top */
+    min-width: 0; /* Allows text truncation to work properly */
 }
 
 .vid-info h4 {
     font-size: 13px;
-    margin: 0 0 5px 0; /* Remove default margin and add spacing */
-    overflow: hidden; /* Prevent text overflow */
-    text-overflow: ellipsis; /* Add ellipsis for long titles */
-    white-space: nowrap; /* Prevent wrapping of long titles */
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.2; /* Improve readability */
 }
 
 .vid-info p {
     font-size: 12px;
-    color: #555; /* Slightly dim the text color for better readability */
+    color: #555;
     margin: 0;
 }
 
@@ -75,23 +78,20 @@
     .recommended {
         flex-basis: 100%;
     }
-
+    
+    /* Remove the column direction change */
     .side-video-list {
-        flex-direction: column; /* Stack thumbnail and text vertically on smaller screens */
-        align-items: center; /* Center the content for better visual appeal */
+        flex-direction: row; /* Keep horizontal layout */
+        align-items: flex-start;
+        padding: 0 10px; /* Add some padding on smaller screens */
     }
-
+    
     .side-video-list img {
-        width: 80%; /* Adjust thumbnail size for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 120px; /* Keep consistent thumbnail size */
+        height: 67px;
     }
-
+    
     .vid-info {
-        text-align: center; /* Center-align text on smaller screens */
-    }
-
-    .vid-info h4 {
-        white-space: normal; /* Allow text to wrap on smaller screens */
+        text-align: left; /* Keep left alignment */
     }
 }
-

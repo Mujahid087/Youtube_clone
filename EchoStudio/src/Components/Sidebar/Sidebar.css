@@ -142,7 +142,7 @@
     border-bottom: 3px solid red; /* Visual indicator for active link */
 }
 
-@media (max-width: 900px) {
+/*  */@media (max-width: 900px) {
     .sidebar {
         display: none; /* Fully hide sidebar on smaller screens */
     }
