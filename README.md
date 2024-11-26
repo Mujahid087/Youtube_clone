@@ -30,7 +30,8 @@ This project is a YouTube clone built using React.js. The app mimics the functio
 Clone the project repository from GitHub:
 
 ```bash
-git clone https://github.com/your-username/your-youtube-clone-project.git
+git clone https://github.com/Mujahid087/Youtube_clone
+
 
 
 
