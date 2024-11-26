@@ -32,18 +32,7 @@ Clone the project repository from GitHub:
 ```bash
 git clone https://github.com/Mujahid087/Youtube_clone
 
-2. Install Dependencies
-In your project folder, navigate to the project directory in the terminal and run the following command to install the dependencies:
 
-```bash 
-npm install
-
-3. Run the Development Server
-To start the development server, run:
-
-```bash
-
-npm start
 
 
 
